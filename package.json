@@ -4,7 +4,6 @@
   "description": "A Vue.js project",
   "author": "rdb2898 <rdc2898@gmail.com>",
   "private": true,
-  "homepage":"https//ralpdexterbongato.github.io",
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "npm run dev",

@@ -1,4 +1,132 @@
-.navigation
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+	box-sizing: border-box;
+	outline: none;
+}
+
+/*MYCSS STARTS HERE*/
+/*global*/
+@import url('https://fonts.googleapis.com/css?family=Jura|Kaushan+Script');
+.router-link-exact-active
 {
-  background: red;
+  border-right: 1px solid #f3f3f3;
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  max-width:1366px;
+  margin:0 auto;
+  background: #f4f4f4;
+  -ms-filter: drop-shadow(0 7px 7px #868691);
+  -webkit-filter: drop-shadow(0 7px 7px #868691);
+  -moz-filter: drop-shadow(0 7px 7px #868691);
+  -o-filter: drop-shadow(0 7px 7px #868691);
+  filter: drop-shadow(0 7px 7px #868691);
+}
+/*header*/
+
+.header-container
+{
+  background:rgba(69, 84, 207, 0.9);
+  padding:20px;
+  display: flex;
+  justify-content: space-between;
+}
+.navs-container
+{
+  display: flex;
+}
+.navs-container a
+{
+  color: #f4f4f4;
+  padding:0px 10px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-family: 'Jura', sans-serif;
+}
+.mylogo h1
+{
+  color:#f2f2f2;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Jura', sans-serif;
+}
+/*HOME*/
+.home-container
+{
+  display: flex;
+  height: 100%;
+  min-height: 100vh;
+}
+.home-box
+{
+  flex:1;
+  display: flex;
+}
+.home-box h1.bigtext
+{
+  margin:auto;
+  font-family: 'Kaushan Script', cursive;
+  font-size:5vw;
+  font-weight: bold;
+  color: #fff;
+}
+.home-box:nth-child(odd)
+{
+  background:#4554CF;
+}
+.home-box:nth-child(even)
+{
+  background:#1E235C;
+}
+.big-svg
+{
+  width:30vw;
+  margin:auto;
+}
+.big-svg img
+{
+  width: 100%;
 }

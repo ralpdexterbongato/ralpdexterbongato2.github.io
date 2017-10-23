@@ -1,7 +1,21 @@
 <template>
   <div id="app">
-    <router-link to="/About">About</router-link>
-    <router-view></router-view>
+    <header>
+      <div class="header-container">
+        <div class="mylogo">
+          <h1>RALP DEXTER BONGATO</h1>
+        </div>
+        <div class="navs-container">
+          <router-link to="/">Home</router-link>
+          <router-link to="/about">About</router-link>
+          <router-link to="/skills">Skills</router-link>
+          <router-link to="/projects">Projects</router-link>
+          <router-link to="/contact">Contact</router-link>
+        </div>
+      </div>
+    </header>
+    <router-view>
+    </router-view>
   </div>
 </template>
 
@@ -13,12 +27,4 @@ export default {
 
 <style>
 @import './assets/css/mycss.css';
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
